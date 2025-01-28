@@ -14,9 +14,16 @@ function agregarAmigo() {
     document.getElementById("amigo").value = "";
     console.log(listaAmigos);
 }
+    mostrarAmigos();
 }
 
 //Esta función debe recorrer el array y mostrar los amigos en pantalla
 function mostrarAmigos() {
-    document.getElementById
+    let lista = document.getElementById("listaDeAmigos");
+    lista.innerHTML = "";
+    for (let i = 0; i < listaAmigos.length; i++) {
+        const nuevoAmigo = document.createElement("li");
+        nuevoAmigo.textContent = listaAmigos[i];
+        lista.appendChild(nuevoAmigo);
+    }
 }
