@@ -27,3 +27,16 @@ function mostrarAmigos() {
         lista.appendChild(nuevoAmigo);
     }
 }
+
+//Esta función debe sortear un amigo y mostrarlo en pantalla
+function sortearAmigo() {
+    if (listaAmigos.length != 0) {
+        let amigoSorteado = listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
+        document.getElementById("resultado").textContent = amigoSorteado;
+        return;
+    }
+    else {
+        alert("No hay amigos en la lista");
+        return;
+    }
+}
