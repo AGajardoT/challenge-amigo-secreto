@@ -1,6 +1,6 @@
 :root {
     --color-primary: #4B69FD;
-    --color-secondary: #FFF9EB;
+    --color-secondary: #fff9eb;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
@@ -132,14 +132,31 @@ ul {
     font-family: "Inter", sans-serif;
     font-size: 18px;
     margin: 20px 0;
+    border-style:solid;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.name-list {
+    text-align: center;
+    background-color:#ffffff;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .result-list {
     margin-top: 15px;
-    color: #05DF05;
+    padding: 25px;
+    color: #1b9c1b;
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    border-color: #000;
+    border-radius: 200px;
+    background-color: rgb(239, 252, 227);
 }
 
 /* Botón de sortear título */

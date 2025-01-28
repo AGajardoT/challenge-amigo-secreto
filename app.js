@@ -26,13 +26,17 @@ function mostrarAmigos() {
         nuevoAmigo.textContent = listaAmigos[i];
         lista.appendChild(nuevoAmigo);
     }
+    if (listaAmigos.length > 0) {
+        lista.classList.remove("hidden");
+    }
 }
 
 //Esta función debe sortear un amigo y mostrarlo en pantalla
 function sortearAmigo() {
     if (listaAmigos.length != 0) {
         let amigoSorteado = listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
-        document.getElementById("resultado").textContent = amigoSorteado;
+        const resultadoElement = document.getElementById("resultado");
+        resultadoElement.textContent = amigoSorteado;
         return;
     }
     else {
