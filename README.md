@@ -8,3 +8,5 @@ Esto idealmente está diseñado para el típico juego de "Amigo Secreto".
 ````⚠️Importante!⚠️ Este juego sigue las instrucciones entregadas por el Challenge, por lo que no entrega una experiencia completa al usuario.````
 
 ````Para asegurarnos del seguimiento correcto del desafio, se ha seguido al pie de la letra las solicitudes del Template de Trello````
+
+ - Adicional a lo solicitado, se ha agregado una funcionalidad para presionar Enter en la cajilla de texto y se ha formateado de manera más ordenada el HTML y CSS de la lista de amigos y la respuesta.
