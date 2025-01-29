@@ -12,7 +12,6 @@ function agregarAmigo() {
     else {
     listaAmigos.push(document.getElementById("amigo").value);
     document.getElementById("amigo").value = "";
-    console.log(listaAmigos);
 }
     mostrarAmigos();
 }
@@ -31,11 +30,12 @@ function mostrarAmigos() {
     }
 }
 
-//Esta función debe sortear un amigo y mostrarlo en pantalla
+//Sortear amigo
 function sortearAmigo() {
     if (listaAmigos.length != 0) {
         let amigoSorteado = listaAmigos[Math.floor(Math.random() * listaAmigos.length)];
         const resultadoElement = document.getElementById("resultado");
+        resultadoElement.classList.remove("hidden");
         resultadoElement.textContent = amigoSorteado;
         return;
     }
@@ -44,3 +44,11 @@ function sortearAmigo() {
         return;
     }
 }
+
+//Enter presionado en el input
+let inputUsuario = document.getElementById(`amigo`);
+inputUsuario.addEventListener("keyup", function(event) {
+        if (event.key === "Enter") {
+          agregarAmigo();
+        }
+});

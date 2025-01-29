@@ -89,6 +89,7 @@ body {
 
 .button-container {
     width: 300px;
+    margin: 20px 0 0 0;
     justify-content: center;
 }
 
@@ -133,7 +134,8 @@ ul {
     font-size: 18px;
     margin: 20px 0;
     border-style:solid;
-
+    text-align:center;
+    padding: 15px 30px;
 }
 
 .hidden {
@@ -141,10 +143,9 @@ ul {
 }
 
 .name-list {
-    text-align: center;
     background-color:#ffffff;
-    padding: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
 }
 
 .result-list {
